@@ -9,7 +9,7 @@ async function main() {
             data: {
                 fellepo: faker.internet.username(),
                 kezdesiIdo: faker.date.soon(),
-                idotartam: faker.number.int(),
+                idotartam: faker.number.int({ min: 60, max: 120 }),
                 elmarad: faker.datatype.boolean()
             }
         })
